@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Ubuntu, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    height: 80px;
+    width: 100%;
+}
+h1 {
+    padding: 30px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: dimgrey;
+}
+h2, h3 {
+padding: 30px;
+color: saddlebrown;
+}
+a {
+    text-decoration: none;
+    color: peru;
+}
+
+/* NAVBAR */
+
+header nav {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+}
+header li {
+float: right;
+font-size: 1.2rem;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    padding: 18px;
+}
+#grosTitre {
+    font-family: Dancing Script;
+    text-shadow: 1px 3px 2px black;
+}
+#loogo {
+    float: left;
+}
+
+.textIntro {
+    padding: 30px;
+    margin: 30px;
+}
+
+/* fond d'ecran, présentation */
+
+#presentation {
+    padding: 60px;
+    background: url(./assets/img/fond-ecran2.png) fixed center/cover ;
+    background-size: auto;
+    height: 100px;
+    min-height: 70vh;
+}
+
+#premierTrait {
+    height: 3px;
+    width: 50%;
+    margin: -3px auto;
+    background-color: bisque;
+}
+.picsBunny {
+    background-color: bisque;
+    padding: 10px;
+    margin-top: 20px;
+    }
+.picsBunny ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.picsBunny img {
+    height: 80%;
+    width: 50%;
+    border-radius: 20% ;
+    /* display: block; */
+}
+
+.linkIcons ul {
+display: flex;
+justify-content: space-between;
+padding: 1px 2%;
+}
+
+.linkIcons img:hover {
+    transform: scale(1.20);
+    transition: 0.6s;
+}
+footer {
+    background-color: bisque;
+}
+
+
+input, textarea {
+    margin: 5px;
+    border: 1px solid chocolate;
+    padding: 10px 15px;
+    width: 50%;
+    font-size: 1rem;
+    font-family: serif;
+    border-radius: 10px;
+}
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+#submit {
+    grid-area: bt;
+    cursor: pointer;
+    background: darkcyan;
+    color: aliceblue;
+    transition: 0.5s;
+}
+#submit:hover {
+    background: darkblue;
+}
+
+@media screen and (max-width: 1100px) {
+    .picsBunny img {
+        max-width: 50%;
+        max-height: 80%;
+    }
